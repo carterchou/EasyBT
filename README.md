@@ -1,7 +1,7 @@
 # EasyBT
 
    A free visual behavior tree editing tool for UNITY.
-   It can help you create any behavior of game objects more quickly.
+   It can help you create any behavior of game objects quickly.
    
    Support 2021.3.15f1 version and above.
    
