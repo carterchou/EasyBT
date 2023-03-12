@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace EasyBT.Runtime
+{
+    [CustomNodeAttibute(typeof(CompositeNode))]
+    public class #SCRIPTNAME# : CompositeNode
+    {
+
+        internal override void Evaluate(Queue<Node> evaluateList)
+        {
+            if (!HasSubNode())
+            {
+                this.taskState = TaskState.Success;
+                parentNode.ReturnResult(TaskState.Success, evaluateList);
+                return;
+            }
+
+            if (obstacleType == ObstacleType.Priority && !ConditionTest())
+            {
+                parentNode.ReturnResult(TaskState.Failure, evaluateList);
+                return;
+            }
+
+
+#if UNITY_EDITOR
+            ReSetNodeState();
+#endif
+
+
+            //Write the logic of your node below
+
+        }
+
+        internal override void ReturnResult(TaskState taskState, Queue<Node> evaluateList)
+        {
+            //The child node will return the execution result to you, and you can perform some operations on the result.
+            //The "evaluateList.Enqueue(this)" Suspend your node until the next frame.
+            this.taskState = taskState;
+            evaluateList.Enqueue(this);
+        }
+    }
+}

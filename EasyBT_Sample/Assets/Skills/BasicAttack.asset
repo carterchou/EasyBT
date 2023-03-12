@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59af6e4d5d1a0b449aec477f07d17d22, type: 3}
+  m_Name: BasicAttack
+  m_EditorClassIdentifier: 
+  skillName: basic attack
+  mp: 0
+  damage: 100
+  animation: 3
+  cd: 0.1
+  attackDistance: 5
+  isSuddenly: 1
+  lastUsedTime: 0
+  hit: {fileID: 9157111232885541768, guid: b4903c4902fe49a40b395683c6e0bcb8, type: 3}
+  effect: {fileID: 0}

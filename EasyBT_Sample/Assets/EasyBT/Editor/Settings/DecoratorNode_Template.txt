@@ -1,0 +1,38 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+namespace EasyBT.Runtime
+{
+    [CustomNodeAttibute(typeof(DecoratorNode))]
+    public class #SCRIPTNAME# : DecoratorNode
+    {
+
+        internal override void Evaluate(Queue<Node> evaluateList)
+        {
+            if (!HasSubNode())
+            {
+                this.taskState = TaskState.Success;
+                parentNode.ReturnResult(TaskState.Success, evaluateList);
+                return;
+            }
+
+#if UNITY_EDITOR
+            ReSetNodeState();
+#endif
+            //Write the logic of your node below¡õ
+
+        }
+
+        internal override void ReturnResult(TaskState taskState, Queue<Node> evaluateList)
+        {
+            //The child node will return the execution result to you, and you can perform some operations on the result.
+            //The "evaluateList.Enqueue(this)" Suspend your node until the next frame.
+            this.taskState = taskState;
+            parentNode.ReturnResult(taskState, evaluateList);
+        }
+    }
+}
+
