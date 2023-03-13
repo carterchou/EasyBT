@@ -5,7 +5,7 @@
    
    Support 2021.3.15f1 version and above.
    
-   Gmail:qwerr654100@gmail.com
+   Gmail:qwe654100@gmail.com
    
    
    # How to work?
