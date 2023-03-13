@@ -8,7 +8,7 @@
    Gmail:qwe654100@gmail.com
    
    # How to work?
-   https://www.youtube.com/@230taka5/videos
+   https://youtube.com/playlist?list=PLVDO-bv4pl99ey0GchsuxhYP-i8erhM80
    
    # Warning:
    If you want to change the name of the class, please set the name of the original script in the fourth parameter, 
