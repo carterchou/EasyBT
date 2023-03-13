@@ -70,7 +70,7 @@ public class Actor : MonoBehaviour
 
         enemies = enemies.Where(e => e.hp > 0).ToList();
 
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sitting"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Sitting")&& _currentHp > 0)
         {
             timer += Time.deltaTime * 3f;
 
