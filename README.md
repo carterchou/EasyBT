@@ -19,7 +19,7 @@
    like this:
    
  
-    [MovedFrom(false, "EasyBT.Runtime.Script", "Assembly-CSharp", "OldActionName")]
+    [MovedFrom(false, "EasyBT.Script", "Assembly-CSharp", "OldActionName")]
     public class NewActionName : Act
     {
         public override void OnStart(BehaviorTree behaviorTree)
