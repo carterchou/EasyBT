@@ -1,3 +1,5 @@
+![image](https://github.com/FierceMalaymo/EasyBT/blob/615951b5af061b6445466ef25dcefdbb8dc75380/%E6%9C%AA%E5%91%BD%E5%90%8D.png)
+
 # EasyBT
 
    A free visual behavior tree editing tool for UNITY.
