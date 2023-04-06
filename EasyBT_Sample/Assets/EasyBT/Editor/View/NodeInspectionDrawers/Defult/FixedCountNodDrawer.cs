@@ -10,7 +10,9 @@ namespace EasyBT.Editor
     {
         public void Draw(SerializedObject serializedObject, NodeInspector nodeInspector)
         {
-            //Draw logic
+			GUI.enabled = true;
+			EditorGUILayout.PropertyField(serializedObject.FindProperty("currentNode")
+				.FindPropertyRelative("count"), new GUIContent("count:"), false);
         }
     }
 }
