@@ -12,7 +12,7 @@ namespace EasyBT.Editor
         {
 			GUI.enabled = true;
 			EditorGUILayout.PropertyField(serializedObject.FindProperty("currentNode")
-				.FindPropertyRelative("count"), new GUIContent("count:"), false);
+				.FindPropertyRelative("Count"), new GUIContent("count:"), false);
         }
     }
 }
